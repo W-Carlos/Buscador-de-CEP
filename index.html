@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <title>Buscador de Cep</title>
 </head>
 <body>
-    <form action="" method="get">
-        <input type="text" id="cep" placeholder="CEP">
-        <input type="button" value="Buscar" onclick="BuscarCep()">
+    <header>
+        <img src="./assets/map.svg" alt="">
+        <h1>Buscador de CEP</h1>
+    </header>
 
-        <input type="text" id="logradouro" placeholder="Endereço">
-        <input type="text" id="complemento" placeholder="Complemento">
-        <input type="text" id="bairro" placeholder="Bairro">
-        <input type="text" id="localidade" placeholder="localidade">
-        <input type="text" id="uf" placeholder="Estado">
-    </form>
+    <main>
+        <form action="" method="get">
+            <input type="text" id="cep" placeholder="Digite o CEP">
+            <input class="button" type="button" value="Buscar" onclick="BuscarCep()">
+    
+            <input type="text" id="logradouro" placeholder="Endereço" disabled>
+            <input type="text" id="complemento" placeholder="Complemento" disabled>
+            <input type="text" id="bairro" placeholder="Bairro" disabled>
+            <input type="text" id="localidade" placeholder="Cidade" disabled>
+            <input type="text" id="uf" placeholder="Estado" disabled>
+        </form>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
